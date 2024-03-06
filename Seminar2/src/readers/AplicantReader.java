@@ -1,6 +1,6 @@
 package readers;
 
-import clase.Aplicant;
+import companie.Aplicant;
 
 import java.io.FileNotFoundException;
 import java.util.List;

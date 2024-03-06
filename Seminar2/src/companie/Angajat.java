@@ -1,4 +1,4 @@
-package clase;
+package companie;
 
 import java.util.Arrays;
 

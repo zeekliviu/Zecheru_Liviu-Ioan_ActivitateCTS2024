@@ -1,7 +1,7 @@
 package readers;
 
-import clase.Aplicant;
-import clase.Student;
+import companie.Aplicant;
+import companie.Student;
 
 import java.io.File;
 import java.io.FileNotFoundException;

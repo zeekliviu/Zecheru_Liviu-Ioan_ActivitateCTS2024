@@ -1,4 +1,4 @@
-package clase;
+package companie;
 
 public abstract class Aplicant{
 	protected String nume;

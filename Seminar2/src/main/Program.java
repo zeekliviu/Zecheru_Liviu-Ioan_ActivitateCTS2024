@@ -3,7 +3,7 @@ package main;
 import java.io.FileNotFoundException;
 import java.util.List;
 
-import clase.Aplicant;
+import companie.Aplicant;
 import readers.AngajatReader;
 import readers.AplicantReader;
 
