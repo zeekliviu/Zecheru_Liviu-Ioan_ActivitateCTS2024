@@ -7,7 +7,7 @@ public class Jucator {
     private boolean muzicaAmbientala;
     private String genMuzica;
 
-    public Jucator(boolean mancareInclusa, boolean scaunErgonomic, boolean bauturaRacoritoare, boolean muzicaAmbientala, String genMuzica) {
+    Jucator(boolean mancareInclusa, boolean scaunErgonomic, boolean bauturaRacoritoare, boolean muzicaAmbientala, String genMuzica) {
         this.mancareInclusa = mancareInclusa;
         this.scaunErgonomic = scaunErgonomic;
         this.bauturaRacoritoare = bauturaRacoritoare;
