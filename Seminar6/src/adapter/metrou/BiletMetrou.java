@@ -8,6 +8,8 @@ public class BiletMetrou extends Calatorie{
         this.nrCalatorii = nrCalatorii;
     }
 
+    private BiletMetrou(){}
+
     @Override
     public boolean estePermisAccesul() {
         return --this.nrCalatorii >= 0;

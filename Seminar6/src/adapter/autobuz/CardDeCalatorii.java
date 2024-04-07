@@ -8,6 +8,8 @@ public class CardDeCalatorii extends CardStb{
         this.soldCard = soldCard;
     }
 
+    private CardDeCalatorii(){}
+
     @Override
     public void validareCard() {
         this.soldCard -= pretCalatorie;

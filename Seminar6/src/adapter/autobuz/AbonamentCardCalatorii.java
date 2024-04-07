@@ -9,6 +9,8 @@ public class AbonamentCardCalatorii extends CardStb{
         this.dataExpirareAbonament = new GregorianCalendar();
     }
 
+    private AbonamentCardCalatorii(){}
+
     @Override
     public void validareCard() {
         if(this.dataExpirareAbonament.before(new GregorianCalendar()))

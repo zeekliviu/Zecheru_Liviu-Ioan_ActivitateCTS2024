@@ -7,6 +7,8 @@ public abstract class Calatorie {
         this.numeClient = numeClient;
     }
 
+    protected Calatorie(){}
+
     public String getNumeClient() {
         return numeClient;
     }

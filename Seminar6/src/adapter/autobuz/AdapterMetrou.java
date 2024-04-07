@@ -5,8 +5,7 @@ import adapter.metrou.Calatorie;
 public class AdapterMetrou extends CardStb{
     private Calatorie calatorie;
 
-    public AdapterMetrou(String numeClient, String cnpClient) {
-        super(numeClient, cnpClient);
+    private AdapterMetrou(){
     }
 
     public AdapterMetrou(Calatorie calatorie)

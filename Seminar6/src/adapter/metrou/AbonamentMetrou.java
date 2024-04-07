@@ -9,6 +9,8 @@ public class AbonamentMetrou extends Calatorie{
         this.dataExpirareAbonament = new GregorianCalendar();
     }
 
+    private AbonamentMetrou(){}
+
     @Override
     public boolean estePermisAccesul() {
         return dataExpirareAbonament.before(new GregorianCalendar());
