@@ -11,6 +11,6 @@ public class MedicamentAdapter extends MedicamentFarmacie {
 
     @Override
     public void cumparaMedicament() {
-        medicamentSpital.achizitioneazaMedicament();
+        super.cumparaMedicament();
     }
 }

@@ -10,6 +10,7 @@ public class Main {
         Medicament medicamentSpital = new MedicamentSpital();
         MedicamentFarmacie medicamentFarmacie = new MedicamentAdapter(medicamentSpital);
 
+        medicamentSpital.achizitioneazaMedicament();
         medicamentFarmacie.cumparaMedicament();
     }
 }
