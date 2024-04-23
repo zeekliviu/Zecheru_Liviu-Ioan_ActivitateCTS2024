@@ -13,7 +13,7 @@ public class Program {
 		List<Aplicant> listaAngajati;
 		try {
 			AplicantReader angajatReader = new AngajatReader();
-			listaAngajati = angajatReader.read("angajati.txt");
+			listaAngajati = angajatReader.read("Seminar2/src/main/angajati.txt");
 			for(Aplicant angajat:listaAngajati)
 				System.out.println(angajat.toString());
 		} catch (FileNotFoundException e) {
