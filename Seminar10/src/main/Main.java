@@ -43,5 +43,6 @@ public class Main {
         autobuz.abonareObservable(client);
         autobuz.abonareObservable(client3);
         autobuz.anuntaPlecare();
+        ((Autobuz)autobuz).anuntaDeranjament();
     }
 }
