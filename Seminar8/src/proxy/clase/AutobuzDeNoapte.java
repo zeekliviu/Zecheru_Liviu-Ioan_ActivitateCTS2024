@@ -12,7 +12,7 @@ public class AutobuzDeNoapte implements Opritor{
         if(autobuz.getNrCalatori() > 0) {
             autobuz.opresteInStatie(statie);
         }
-        else System.out.printf("Autobuzul %d nu opreste in statis %s%n", autobuz.getNrAutobuz(), statie);
+        else System.out.printf("Autobuzul %d nu opreste in statia %s%n", autobuz.getNrAutobuz(), statie);
     }
 
     @Override
