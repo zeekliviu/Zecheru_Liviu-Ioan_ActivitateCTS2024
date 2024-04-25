@@ -1,6 +1,7 @@
 package main;
 
 import observer.Client;
+import observer.Observer;
 import strategy.CardBancar;
 import strategy.SMS;
 import strategy.Validator;
@@ -27,8 +28,8 @@ public class Main {
 
         // OBSERVER
 
-        Client client = new Client("Gabi");
-        Client client1 = new Client("Andrei");
+        Observer client = new Client("Gabi");
+        Observer client1 = new Client("Andrei");
         Subiect tramvai = new Tramvai(41);
         tramvai.abonareObservable(client);
         tramvai.abonareObservable(client1);
