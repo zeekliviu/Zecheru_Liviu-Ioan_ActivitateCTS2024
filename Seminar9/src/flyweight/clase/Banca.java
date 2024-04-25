@@ -25,7 +25,7 @@ public class Banca {
 
     public FlyweightClient getClient(String nume, String adresa, String numarTelefon)
     {
-        Client c = new Client(nume, adresa, numarTelefon);
+        FlyweightClient c = new Client(nume, adresa, numarTelefon);
         if(!registru.containsKey(nume))
         {
             registru.put(nume, c);
