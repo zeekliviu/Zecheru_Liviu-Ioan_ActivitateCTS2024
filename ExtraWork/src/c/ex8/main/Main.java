@@ -3,6 +3,7 @@ package c.ex8.main;
 import c.ex8.clase.*;
 import org.apache.commons.lang3.RandomStringUtils;
 
+import java.lang.reflect.InvocationTargetException;
 import java.util.Random;
 
 public class Main {
@@ -17,18 +18,18 @@ public class Main {
 
     static Compozibil getCompozit(Class<?> tip, String denumire)
     {
-        switch (tip.getSimpleName())
+        if(tip.getInterfaces()[0] != Compozibil.class)
         {
-            case "Magazie":
-                return new Magazie(denumire);
-            case "Sectiune":
-                return new Sectiune(denumire);
-            case "Subsectiune":
-                return new Subsectiune(denumire);
-            case "Medicament":
-                return new Medicament(denumire);
-            default:
-                throw new RuntimeException("Nu există această categorie de Compozit!");
+            throw new RuntimeException("Nu e tip compozit!");
+        }
+        else
+        {
+            try {
+                return (Compozibil) tip.getConstructor(String.class).newInstance(denumire);
+            } catch (NoSuchMethodException | InstantiationException | InvocationTargetException |
+                     IllegalAccessException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 
