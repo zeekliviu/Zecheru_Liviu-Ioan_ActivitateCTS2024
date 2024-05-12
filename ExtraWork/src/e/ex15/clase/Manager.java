@@ -15,4 +15,9 @@ public class Manager {
     {
         return this.stari.get(index);
     }
+
+    public int getNrStari()
+    {
+        return this.stari.size();
+    }
 }
