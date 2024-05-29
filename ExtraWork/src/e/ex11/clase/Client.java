@@ -12,22 +12,13 @@ public class Client {
         this.nume = nume;
     }
 
-    public void setModProcesare(Class<?> verificabil) {
-        if(!Verificabil.class.isAssignableFrom(verificabil))
-        {
-            throw new IllegalArgumentException("Clasa trebuie să implementeze Verificabil!");
-        }
-        switch(verificabil.getSimpleName())
-        {
-            case "TribunaVIP":
-                this.modProcesare = tribunaVIP;
-                break;
-            case "Tribuna":
-                this.modProcesare = tribuna;
-                break;
-            case "Peluza":
-                this.modProcesare = peluza;
-                break;
+    public void setModProcesare(Class<? extends Verificabil> verificabil) {
+        if(verificabil.equals(TribunaVIP.class)) {
+            this.modProcesare = tribunaVIP;
+        } else if (verificabil.equals(Tribuna.class)) {
+            this.modProcesare = tribuna;
+        } else {
+            this.modProcesare = peluza;
         }
     }
 
